@@ -1,0 +1,32 @@
+% Required packages
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{
+    apacite,
+    array,
+    enumitem,
+    graphicx,
+    pdfpages,
+    setspace,
+    titlesec}
+
+
+% Column types for tables
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+
+% Sections
+
+\newcommand{\dissertationsection}[1]{\newpage\centering\textbf{\MakeUppercase{#1}}\\[1.5ex]\raggedright}
+\newcommand{\dissertationindent}{\hspace{2em}}
+
+
+% Only for marking fields
+% When the dissertation is complete, this should no longer be needed.
+
+\newcommand{\field}[1]{{\color{BrickRed}{#1}}}
